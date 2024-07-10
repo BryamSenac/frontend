@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            width: 80vw;
+            height: 80vh;
+            background-color: white;
+            border-radius: 2vw;
+            box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.3);
+
+            display: flex;
+            align-items: center;
+        }
+        div{
+            width: 40vw;
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        input{
+            border-radius: 100vw;
+            width: 12vw;
+            height: 3vh;
+            border: 0;
+            box-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        button{
+            width: 10vw;
+            height: 3vh;
+            border-radius: 100vw;
+            border: 0;
+            background-color:rgb(3, 106, 106);
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(2, 78, 78);
+        }
+    </style>
+    <script src="./index.js"></script>
+</head>
+<body id="body">
+    <section>
+        <div>
+            <input type="text" placeholder="Digite uma cor..." id="input_getcor">
+            <button onclick="getCor()">PROCURAR</button>
+        </div>
+        <div>
+            <input type="text" placeholder="Digite o nome da cor..." id="post_cornome">
+            <input type="text" placeholder="Digite o hexadecimal da cor..." id="post_corhex">
+            <button onclick="addCor()">CADASTRAR</button>
+        </div>
+    </section>
+</body>
+</html>
